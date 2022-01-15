@@ -1,0 +1,9 @@
+
+P * (100 - D) / 100
+
+= PD
+
+
+P: Precio Original
+D: Descuento
+PD: Precion con Descuento
