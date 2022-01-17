@@ -1,0 +1,14 @@
+Promedio
+
+- Media aritmetica
+Venta1 + Venta2 + Venta3 / Cantidad de ventas
+
+la media aritmetica no da resultados exactos cuando hay excepciones que difieren demasiado de la poblacion
+
+- Mediana
+Ordenando una lista de mayor a menor solo tenemos que encontrar el elemento que se encuantra a mitad de lista y este representa mejor el tipico elemento de la matriz.
+
+En caso de ser una lista par se toman los 2 elementos de medio, se suman y se dividen entre 2
+
+- Moda
+El elemento que mas se repite en la lista. Si existen 2, se toman los 2.
