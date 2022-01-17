@@ -10,11 +10,11 @@ function calcularMediaAritmetica(lista) {
 }
 
 
-const lista1 = [
-    400000000,
+const lista = [
     100,
-    500,
     200,
+    500,
+    400000000,
 ];
 
 const mitadLista1 = parseInt(lista1.length / 2); //parseInt redondea el resultado

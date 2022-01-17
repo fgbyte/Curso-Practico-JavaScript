@@ -11,22 +11,23 @@ function calcularMediaAritmetica(lista) {
 
 
 function calcularMediana(lista) {
-    const mitadLista = parseInt(lista.length / 2)
+    const listaOrdenada = lista.sort(function (a, b) { return a - b}); //ordenamos lista
+    const mitadLista = parseInt(listaOrdenada.length / 2) //redondeamos
 
     function esPar(lengthLista) {
 
-        if (lengthLista % 2 === 0) {
+        if (lengthLista % 2 === 0) { //validamos par
             return true;
         }else{
-            return false;
+            return false; //validamos impar
         }
     }
 
     let mediana;
 
-    if (esPar(lista.length)) {
-        const elemento1 = lista[mitadLista - 1];
-        const elemento2 = lista[mitadLista];
+    if (esPar(listaOrdenada.length)) { //trabajamos con par
+        const elemento1 = listaOrdenada[mitadLista - 1];
+        const elemento2 = listaOrdenada[mitadLista];
 
         const promedioElemento1y2 = calcularMediaAritmetica([
             elemento1, elemento2
@@ -35,8 +36,20 @@ function calcularMediana(lista) {
         mediana = promedioElemento1y2;
         console.log("La mediana es: " + mediana);
     
-    }else{
-    mediana = lista[mitadLista];
+    }else{ //trabajamos con impar
+    mediana = listaOrdenada[mitadLista];
     console.log("La mediana es: " + mediana);
     }
 }
+
+
+//Referencias de HTML
+function onclickCalcularMediana() {
+    const InputLista = document.getElementById("InputLista")
+    myLista = InputLista.value;
+
+    const myMediana = calcularMediana(myLista);
+    const result = ResultP.innerText = "La mediana es: " + myMediana;
+    return result;
+}
+
