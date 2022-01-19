@@ -43,7 +43,7 @@ function calcularMediana(lista) {
 }
 
 
-//Referencias de HTML
+//Inputs de HTML
 function onclickCalcularMediana() {
     const InputLista = document.getElementById("InputLista")
     myLista = InputLista.value;
@@ -53,3 +53,5 @@ function onclickCalcularMediana() {
     return result;
 }
 
+//Hasta aqui funciona la function introduciendo calcularMediana([23, 34, 231, 4]) de forma desordenada igual pincha la function.
+//Lo que no pincha son los Inputs del HTML, tengo q haberiguar como es
