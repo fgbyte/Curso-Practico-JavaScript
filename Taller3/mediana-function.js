@@ -45,8 +45,7 @@ function calcularMediana(lista) {
 
 //Inputs de HTML
 function onclickCalcularMediana() {
-    myLista = 0;
-    const InputLista = document.getElementByName("array[]");
+    const InputLista = document.getElementById("InputLista")
     myLista = InputLista.value;
 
     const myMediana = calcularMediana(myLista);
